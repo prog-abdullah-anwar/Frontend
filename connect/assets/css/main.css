@@ -1,0 +1,385 @@
+/* Global */
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Edit Navbar Bootstrap */
+.navbar {
+  position: fixed;
+  z-index: 999999;
+  width: 100%;
+  background-color: #fff;
+}
+
+.navbar .navbar-brand {
+  width: 50%;
+  color: #555;
+}
+
+.navbar .collapse li a {
+  color: #555;
+}
+
+.navbar .collapse li:last-child {
+  border: 1px solid #EEE;
+  border-radius: 5px;
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+/* End Navbar Bootstrap */
+/* Start Product */
+.product {
+  padding: 40px 0;
+  background-color: #f2f4f7;
+}
+
+.product .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767px) {
+  .product .items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.product .items .text h2 {
+  font-weight: bold;
+}
+
+.product .items .text p {
+  color: #818198;
+}
+
+@media (max-width: 767px) {
+  .product .items .text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    text-align: center;
+  }
+  .product .items .text a {
+    margin: 10px 5px;
+  }
+}
+
+.product .items .image img {
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .product .items .image {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+/* End Product */
+/* Start yd-cat */
+.yd-cat {
+  padding: 120px 0;
+}
+
+.yd-cat .firstly p {
+  color: #818198;
+}
+
+.yd-cat .secondly {
+  margin: 20px 0;
+}
+
+.yd-cat .secondly .item {
+  padding: 50px 30px;
+  text-align: left;
+}
+
+.yd-cat .secondly .item .icons {
+  text-align: left;
+}
+
+.yd-cat .secondly .item .icons img {
+  max-width: 30%;
+}
+
+.yd-cat .secondly .item:first-child {
+  background: #fff2e5;
+}
+
+.yd-cat .secondly .item:nth-child(2) {
+  background: #f8f9fa;
+}
+
+.yd-cat .secondly .item:last-child {
+  background: #f0f5f9;
+}
+
+/* End yd-cat */
+/* start features */
+.features .first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+  background-color: #f0f5f9;
+}
+
+.features .first img {
+  max-width: 100%;
+}
+
+.features .first .text i {
+  font-size: 28px;
+  margin-right: 10px;
+  opacity: .8;
+}
+
+.features .second {
+  background-color: #f0f5f9;
+  padding-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features .second img {
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .features .second img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .features .second .text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.features .second .text i {
+  font-size: 28px;
+  margin-right: 10px;
+  opacity: .8;
+}
+
+/* end features */
+/* start reviews */
+.reviews {
+  background-color: #f0f5f9;
+  width: 90%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.reviews .slick .item {
+  outline: none;
+}
+
+.reviews .slick .item .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.reviews .slick .item .text img {
+  width: 50px;
+}
+
+.reviews .slick .item .text p {
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+.reviews .slick .item .information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews .slick .item .information img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.reviews .slick .item .information div {
+  padding-left: 20px;
+}
+
+.reviews .slick .item .information div h3 {
+  margin: 0;
+}
+
+/* end reviews */
+.pricing .item {
+  background-color: #f0f5f9;
+  margin-left: 30px;
+  padding: 40px 0;
+}
+
+.pricing .item span {
+  display: inline-block;
+  width: 100%;
+  color: #ABAFB3;
+}
+
+.pricing .item img {
+  max-width: 30%;
+}
+
+.pricing .item p {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+}
+
+.pricing .item small {
+  display: inline-block;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+/* Start questions */
+.questions {
+  width: 90%;
+  margin: auto;
+  background-color: #f0f5f9;
+  padding: 40px 10px;
+}
+
+.questions .question {
+  padding-top: 40px;
+}
+
+.questions .question .title {
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.03);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.questions .question .title h2 {
+  font-size: 18px;
+}
+
+.questions .question .text {
+  display: none;
+}
+
+/* End questions*/
+/* Start sender */
+.sender {
+  padding: 50px 0;
+}
+
+/* end sender */
+/* footer */
+.footer {
+  background-color: #f0f5f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    text-align: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer .links, .footer .social, .footer a {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer .logo {
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+.footer ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer .links a {
+  color: #555;
+  font-size: 17px;
+}
+
+.footer .social a {
+  color: #73c386;
+}
+
+/* end footer */
+.scrolltop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: 40px;
+  color: #73c386;
+  cursor: pointer;
+  opacity: .5;
+  display: none;
+}
+
+.scrolltop:hover {
+  opacity: 1;
+}
+/*# sourceMappingURL=main.css.map */
