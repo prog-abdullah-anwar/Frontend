@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" >
+    <link rel="stylesheet" href="assets/css/slick-theme.css" >
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+        <div id="app">
+        <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">ZIVOC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SERVICES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">TEAM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PRICE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TESTIMONIAL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+
+          </ul>
+      
+        </div>
+      </nav>
+
+      <!-- End Navbar -->
+
+      <section class="banner">
+          <div class="container">
+              <div class="flex">
+                  <div class="content">
+                    <h2>Professional Development for <br />Leaders and Coaches</h2>
+                    <p>
+                    Splash your dream color Bring your home to lively Colors. We make it a priotity to offer <br /> flexible services to accomodate your needs
+                    </p>
+                    <div class="buttons">
+                        <button class="btn btn-info">Buy Now</button>
+                        <button class="btn btn-outline-info">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i>                        </button>
+                    </div>
+                    </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="section">
+          <div class="container">
+              <div class="row parent">
+                  <div class="col-md-6">
+                      <img src="assets/images/about01.png" />
+                  </div>
+                  <div class="col-md-6 content">
+                      <div class="item active">
+                        <h4><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>Our History</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit viverra egestas. Morbi quam lectus commodo ac lacus eget, finibus aliquet metus. Pellentesque blandit nunc non sagittis consectetur. In accumsan eget enim egeted porta. Etiam gravida non leo vel placerat.
+                        </p>
+                      </div>
+                      <div class="item ">
+                        <h4><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Our Goal & Vission</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit viverra egestas. Morbi quam lectus commodo ac lacus eget, finibus aliquet metus. Pellentesque blandit nunc non sagittis consectetur. In accumsan eget enim egeted porta. Etiam gravida non leo vel placerat.
+                        </p>
+                      </div>
+                      <div class="item ">
+                        <h4><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Profitability</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit viverra egestas. Morbi quam lectus commodo ac lacus eget, finibus aliquet metus. Pellentesque blandit nunc non sagittis consectetur. In accumsan eget enim egeted porta. Etiam gravida non leo vel placerat.
+                        </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="section2">
+          <div class="container">
+              <div class="row text-center">
+                  <div class="col-md-3" v-for="sec in section2">
+                    <h4>  <i :class="sec.icon" aria-hidden="true"></i> {{sec.text}}</h4>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="video">
+        <div class="overlay"></div>
+        <div class="content text-center">
+          <i class="fa fa-play" aria-hidden="true"></i>
+          <p>Play Video</p>
+        </div>
+      </section>
+      <section class="features text-center">
+          <div class="container">
+            <div class="content">
+              <h2>
+                OUR FEATURES
+              </h2>
+              <p>
+                Splash your dream color Bring your home to lively Colors. We make it a priotity to offer flexible services to accomodate your needs
+              </p>
+            </div>
+            <div class="flex">
+              <div class="feat1">
+                <div class="item" v-for="feat in feat1">
+                  <i :class="feat.icon" aria-hidden="true"></i> 
+                  <h4 v-html="feat.title"></h4>
+                  <p v-html="feat.text"></p>
+                </div>
+              
+              </div>
+              <div class="image">
+                <img src="assets/images/feature01.png" alt="">
+              </div>
+              <div class="feat2">
+                <div class="item" v-for="feat in feat2">
+                  <i :class="feat.icon" aria-hidden="true"></i> 
+                  <h4 v-html="feat.title"></h4>
+                  <p v-html="feat.text"></p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="skils">
+        <div class="flex">
+          <div class="image">
+            <img src="assets/images/cta2.jpg" alt="">
+          </div>
+          <div class="content">
+            <h2>GET A BETTER RESULTS</h2>
+            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.            </p>
+            <div class="app-progress">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">Finance(90%)</div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Marketing(80%)</div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar  bg-info" role="progressbar" style="width: 99%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Liabilities(99%)</div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar  bg-warning" role="progressbar" style="width: 95%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Profitability(95%)                </div>
+              </div>
+         
+            </div>
+            <button class="btn btn-outline-info">Read More</button>
+          </div>
+        </div>
+      </section>
+      <section class="team">
+        <header class="text-center">
+          <h3>OUR TEAM</h3>
+          <p>
+            Splash your dream color Bring your home to lively Colors. We make it a priotity to offer flexible services to accomodate your needs
+          </p>
+        </header>
+        <div class="container">
+          <div class="flex">
+            <div class="item">
+              <ul class="social">
+                <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-yahoo" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+              </ul>
+              <img src="assets/images/04.jpg" alt="">
+              <div class="title text-center">
+                <h4>Osval Madden</h4>
+                <span>Accountant</span>
+              </div>
+            </div>
+            <div class="item">
+              <ul class="social">
+                <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-yahoo" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+              </ul>
+              <img src="assets/images/02.jpg" alt="">
+              <div class="title text-center">
+                <h4>Jessie Price</h4>
+                <span>Accountant</span>
+              </div>
+            </div>
+            <div class="item">
+              <ul class="social">
+                <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-yahoo" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+              </ul>
+              <img src="assets/images/03.jpg" alt="">
+              <div class="title text-center">
+                <h4>Patricia Elliott</h4>
+                <span>Accountant</span>
+              </div>
+            </div>
+            <div class="item">
+              <ul class="social">
+                <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-yahoo" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+              </ul>
+              <img src="assets/images/01 (1).jpg" alt="">
+              <div class="title text-center">
+                <h4>Jessie Price</h4>
+                <span>Accountant</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pricing">
+        <header class="header">
+          <h3>OUR PRICING</h3>
+          <p>
+            Splash your dream color Bring your home to lively Colors. We make it a priotity to offer flexible services to accomodate your needs
+          </p>
+        </header>
+        <div class="container">
+          <div class="flex">
+            <div class="item text-center">
+              <h2>BASIC</h2>
+              <div class="desc">
+                <h4>$0</h4>
+                <p>Month</p>
+              </div>
+              <ul>
+                <li>Full Access</li>
+                <li>Source Files</li>
+                <li>100 Users Accounts</li>
+                <li>1 Year License</li>
+              </ul>
+              <button class="btn btn-info">Buy Now</button>
+            </div>
+            <div class="item text-center">
+              <h2>STANDERD</h2>
+              <div class="desc">
+                <h4>$199</h4>
+                <p>Month</p>
+              </div>
+              <ul>
+                <li>Full Access</li>
+                <li>Source Files</li>
+                <li>100 Users Accounts</li>
+                <li>1 Year License</li>
+              </ul>
+              <button class="btn btn-info">Buy Now</button>
+            </div>
+            <div class="item text-center">
+              <h2>PREMIUM</h2>
+              <div class="desc">
+                <h4>$299</h4>
+                <p>Month</p>
+              </div>
+              <ul>
+                <li>Full Access</li>
+                <li>Source Files</li>
+                <li>100 Users Accounts</li>
+                <li>1 Year License</li>
+              </ul>
+              <button class="btn btn-info">Buy Now</button>
+            </div>
+            <div class="item text-center">
+              <h2>PROFESSIONAL</h2>
+              <div class="desc">
+                <h4>$399</h4>
+                <p>Month</p>
+              </div>
+              <ul>
+                <li>Full Access</li>
+                <li>Source Files</li>
+                <li>100 Users Accounts</li>
+                <li>1 Year License</li>
+              </ul>
+              <button class="btn btn-info">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial">
+        <div class="flex">
+          <div class="x parent-text">
+            <div class=" item">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <p>
+                " It has roots in a piece of classical Latin literature from 45 BC, making sure there isn't years old. Richard McClintock, a Latin professor atliterature from 45 BC, making sure there isn't years old Hampden-Sydney College in Virginia "
+              </p>
+              <small>@kevin_peterson</small>
+            </div>
+            <div class="item">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <p>
+                " It has roots in a piece of classical Latin literature from 45 BC, making sure there isn't years old. Richard McClintock, a Latin professor atliterature from 45 BC, making sure there isn't years old Hampden-Sydney College in Virginia "
+              </p>
+              <small>@kevin_peterson</small>
+            </div>
+            <div class="item">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <p>
+                " It has roots in a piece of classical Latin literature from 45 BC, making sure there isn't years old. Richard McClintock, a Latin professor atliterature from 45 BC, making sure there isn't years old Hampden-Sydney College in Virginia "
+              </p>
+              <small>@kevin_peterson</small>
+            </div>
+          </div>
+          <div class="x image">
+            <img src="assets/images/cta1.jpg" />
+          </div>
+        </div>
+      </section>
+
+      <section class="blog">
+        <div class="header">
+          <h3>LATEST NEWS</h3>
+          <p>
+            Splash your dream color Bring your home to lively Colors. We make it a priotity to offer flexible services to accomodate your needs
+          </p>
+        </div>
+        <div class="container">
+          <div class="flex">
+            <div class="item">
+              <img src="assets/images/blog/01.jpg" alt="">
+              <h3>How To Better Understand Yourself</h3>
+              <p>Splash your dream color Bring your home to lively Colors We make it a priotity to offer flexible services</p>
+              <footer class="info">
+                <span><i class="fa fa-clock-o" aria-hidden="true"></i> 1st July 2019</span>
+                <span><i class="fa fa-user-circle" aria-hidden="true"></i> ThemDesing</span>
+              </footer>
+            </div>
+            <div class="item">
+              <img src="assets/images/blog/02.jpg" alt="">
+              <h3>How To Better Understand Yourself</h3>
+              <p>Splash your dream color Bring your home to lively Colors We make it a priotity to offer flexible services</p>
+              <footer class="info">
+                <span><i class="fa fa-clock-o" aria-hidden="true"></i> 1st July 2019</span>
+                <span><i class="fa fa-user-circle" aria-hidden="true"></i> ThemDesing</span>
+              </footer>
+            </div>
+            <div class="item">
+              <img src="assets/images/blog/03.jpg" alt="">
+              <h3>How To Better Understand Yourself</h3>
+              <p>Splash your dream color Bring your home to lively Colors We make it a priotity to offer flexible services</p>
+              <footer class="info">
+                <span><i class="fa fa-clock-o" aria-hidden="true"></i> 1st July 2019</span>
+                <span><i class="fa fa-user-circle" aria-hidden="true"></i> ThemDesing</span>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section3">
+        <div class="content">
+          <h3>HAVE A GREAT OPPORTUNITY FOR YOUR BUSINESS</h3>
+          <p>
+            Splash your dream color Bring your home to lively Colors. We make it a priotity to offer flexible services to accomodate your needs
+          </p>
+          <button class="btn btn-info">Get Free Trial</button>
+        </div>
+      </section>
+      <section class="contact">
+        <header class="header">
+          <h3>GET IN TOUCH !</h3>
+          <p>
+            Splash your dream color Bring your home to lively Colors. We make it a priotity to offer flexible services to accomodate your needs
+          </p>
+        </header>
+        <div class="container">
+          <form action="">
+            <div class="row">
+              <div class="col">
+                <label>Your name <span class="text-danger">*</span></label>
+                <input type="text" required placeholder="Name" class="form-control" />
+              </div>
+              <div class="col">
+                <label>Your Email <span class="text-danger">*</span></label>
+                <input type="text" required placeholder="Email" class="form-control" />
+              </div>
+              <div class="col-12 my-3">
+                <label>Subject <span class="text-danger">*</span></label>
+                <input type="text" required placeholder="Email" class="form-control" />
+              </div>
+              <div class="col-12">
+                <label>Comments <span class="text-danger">*</span></label>
+               <textarea name="comments" required placeholder="Message:" class="form-control" cols="30" rows="10"></textarea>
+              </div>
+              <div class="col-12 mt-3">
+                <button class="btn btn-info btn-block">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57292.46812786513!2d32.756501710357504!3d26.171317596173264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x144eb62eb4d2496f%3A0x50f240bdb670aa01!2z2YLZhtin2Iwg2YLYs9mFINmC2YbYp9iMINmC2YbYpw!5e0!3m2!1sar!2seg!4v1618904308380!5m2!1sar!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </section>
+      </div>
+
+      <footer class="footer">
+        <div class="scrolltop"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></div>
+        <div class="container">
+          <div class="flex">
+            <div class="one">
+              <h2>ZIVOC</h2>
+              <p>
+                Splash your dream color Bring your home to lively <br /> Colors home to lively Colors
+              </p>
+              <ul>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+            <ul class="two">
+              <h2>LINKS</h2>
+              <li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i> About</a></li>
+              <li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i> Services</a></li>
+              <li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i> Team</a></li>
+              <li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i> Pricing</a></li>
+            </ul>
+            <ul class="three">
+              <h2>SUPPORT</h2>
+              <li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i> Contact Us</a></li>
+              <li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i> Submit a Ticket</a></li>
+              <li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i> Refund Policy</a></li>
+              <li><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i> Professional Services</a></li>
+            </ul>
+            <ul class="four">
+              <h2>GET IN TOUCH !</h2>
+              <li><i class="fa fa-location-arrow" aria-hidden="true"></i> 3/2/64 Mongus Street, UK</li>
+              <li><i class="fa fa-envelope" aria-hidden="true"></i> name@domain.com</li>
+              <li><i class="fa fa-phone" aria-hidden="true"></i> +(125) 215-4561</li>
+              <li><i class="fa fa-internet-explorer" aria-hidden="true"></i> www.yourdomain.com</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
