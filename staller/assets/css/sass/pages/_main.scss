@@ -1,0 +1,259 @@
+/* Global */ 
+body{
+    font-family: 'Noto Sans', sans-serif;
+    background-image: linear-gradient(to right top, #051937, #1f3c5c, #3c6381, #5d8da6, #82b8cb);
+    background-repeat: repeat;
+ 
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+button{
+    font-size:15px !important;
+}
+
+/* End Global */ 
+
+/* Start Header */ 
+.header{
+    text-align: center;
+    padding: 80px 0;
+    color : #FFF;
+    h3{
+        padding-top: 15px;
+    }
+}
+/* End Header */ 
+
+/* Start contents */ 
+.contents{
+    width:80%;
+    background-color: #FFF;
+    margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    .menu{
+        text-align: center;
+        background-color: #f7f7f7;
+        padding: 20px 0;
+        width: 100%;
+  
+            li{
+                display: inline-block;
+                margin-right: 10px;
+                padding: 5px 20px;
+                border-radius: 5px;
+                transition: all .2s ease-in-out;
+                a{
+                    color:#555;
+                    text-decoration: none;
+                    font-size: 14px;
+                }
+                &:hover{
+                    background-color: #EEE;
+                    color:#FFF;
+                }
+                &.active{
+                    background-color: #FFF;
+                    a{
+                        color:#555;
+                    }
+                }
+               
+            }
+    }
+    /* Start Introduction */ 
+    #introduction{
+        border-bottom: 1px solid #EEE;
+        .flex{
+            display: flex;
+            align-items: center;
+            @include Phone{
+                flex-wrap: wrap;
+            }
+            .content{
+                padding-right: 80px;
+                text-align: justify;
+                width:70%;
+                @include Phone{
+                    width:100%;
+                    padding-right: 0;
+                    order: 2;
+
+                    header{
+                        text-align: center;
+                        h2{
+                        font-size:18px;
+                        }
+                      
+                    }
+                    p{
+                        font-size:14px;
+                    }
+                   ul{
+                       text-align: center;
+                   }
+                }
+                header,p{
+                    padding-bottom: 15px;
+                }
+            }
+            .image{
+                width:30%;
+                @include Phone{
+                    width:100%;
+                    text-align: center;
+                    padding:20px 0;
+                }
+                img{
+                    border-radius: 50%;
+                    padding: 7px;
+                    border:1px solid #EEE;
+                    max-width: 100%;
+
+                    @include Phone{
+                        max-width: 70%;
+                        order: 1;
+                    }
+                }
+                
+            }
+        }
+    }
+    /* End Introduction */
+
+    /* Start First Section */ 
+    #first-section {
+        border-bottom: 1px solid #EEE;
+
+        h2{
+            padding-bottom:55px;
+            padding-top:15px;
+        }
+        .flex{
+            display: flex;
+            justify-content: center;
+            @include Phone{
+                flex-wrap: wrap;
+            }
+            .item{
+                margin: 0 25px;
+                .icon{
+                        border:1px solid #dddddd;
+                        padding:20px;
+                        border-radius: 50%;
+                        width:150px;
+                        height: 150px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 0 auto;
+                        position: relative;
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            width:90%;
+                            height: 90%;
+                            left: 50%;
+                            top:50%;
+                            transform: translate(-50%,-50%);
+                            border:1px solid #dddddd;
+                            border-radius: 50%;
+                            text-align: center;
+                        }
+
+                    i{
+                        font-size:70px;
+                        margin-bottom: 15px;
+                      
+                       
+                    }
+                 
+                }
+                h4{
+                    padding:15px 0;
+                }
+                p{
+                    text-align: justify;
+                }
+                
+            }
+        }
+    }
+    /* End First Section */ 
+
+    /* Start Two Section */ 
+    .two-section{
+        border-bottom: 1px solid #EEE;
+        padding: 50px 0;
+        margin: 0 50px;
+      
+        .flex{
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+            overflow: hidden;
+            @include Phone{
+                flex-wrap: wrap;
+            }
+            .item{
+                width:100%;
+                padding: 25px 13px;
+                color : #FFF;
+                i{
+                    font-size:40px;
+                    margin-bottom: 4px;
+                }
+            }
+        }
+    }
+    /* End Two Section */ 
+    /* start get started */ 
+    #get-started{
+        padding:50px 0;
+        border-bottom: 1px solid #EEE;
+        h2{
+            padding:20px 0;
+        }
+        p{
+            padding:15px 0;
+        }
+        ul{
+            li{
+                display: inline-block;
+                margin-right: 15px;
+            }
+        }
+    }
+    /* end fet started */ 
+}
+/* end contents */ 
+
+/* start footer */ 
+.footer{
+    width:80%;
+    margin:auto;
+    color:#FFF;
+    .links{
+        li{
+            margin-bottom: 5px;
+            font-size:14px;
+        }
+    }
+    .social{
+        padding: 20px 0;
+        li{
+            display: inline-block;
+            margin-right: 15px;
+        }
+    }
+}
+/* end footer */ 
+
+/* Freamwork */ 
+.main{
+    padding:30px;
+}
+/* End Freamwork */ 
